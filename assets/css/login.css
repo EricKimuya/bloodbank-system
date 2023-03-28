@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+body {
+  width: 100%;
+  height: calc(100%);
+  /*background: #007bff;*/
+}
+
+#main {
+  width: 100%;
+  height: calc(100%);
+  background: white;
+}
+
+#login-right {
+  position: absolute;
+  right: 0;
+  width: 40%;
+  height: calc(100%);
+  background: white;
+  display: flex;
+  align-items: center;
+}
+
+#login-left {
+  position: absolute;
+  left: 0;
+  width: 60%;
+  height: calc(100%);
+  display: flex;
+  /* background-image: url(assets/uploads/bloodbg.jpg); */
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#login-right .card {
+  margin: auto;
+  z-index: 1;
+
+}
+
+.logo {
+  margin: auto;
+  font-size: 8rem;
+  background: white;
+  padding: 0.5em 0.7em;
+  border-radius: 50% 50%;
+  color: #000000b3;
+  z-index: 10;
+}
+
+div#login-right::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100%);
+  height: calc(100%);
+  /*background: #000000e0;*/
+}
+
+.login {
+  text-align: center;
+  padding-bottom: 1rem;
+  color: black;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.header-container > a {
+  text-decoration: none;
+  padding-bottom: 0.6rem;
+  padding-top: 0.6rem;
+  background-color: gray ;
+  margin-right: 1rem;
+  width: 100%;
+  color: white;
+  border-radius: 0.4rem;
+}
+
+
+.header-container >a.active,
+.header-container > a:hover {
+  background-color: white ;
+  color: red;
+  border: 1px solid red;
+  cursor: pointer;
+}
+
+.show {
+  display: flex;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  justify-content: center;
+  font-weight: 800;
+  font-family: "Poppins" sans-serif;
+  background-color: #dc3545 !important;
+  margin-bottom: 0.4rem;
+  padding: 0.3rem;
+  width: 100%;
+  border-radius: 0.4rem;
+  display: none;
+}
+
+
